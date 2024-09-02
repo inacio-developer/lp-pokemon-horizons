@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+/* general settings: */
+
+body, p, h1, h2, h3, h4, h5, h6, span, a, ul, li {
+    font-family: 'Moderustic';
+}
+a {
+    color: #e40533;
+}
+.transitionBg {
+    transition: background-color 2s ease;
+}
+
+/* header - menu: */
+
+header {
+    top: 10px;
+}
+.logo {
+    width: 150px;
+}
+svg {
+    width: 50px;
+    padding: 12px;
+}
+.active svg {
+    border-radius: 50%;
+}
+
+
+/* fire menu */
+
+.fire .svg-fill, .fire .svg-stroke {
+    fill: #e40533;
+    stroke: #e40533;
+
+}
+.fire .svg-pokeball-fill  {
+    fill: #e40533;
+}
+.fire .active .svg-fill, .fire .active .svg-stroke, .fire .active .svg-home-stroke{
+    fill: white;
+    stroke: #e40533;
+}
+.fire .active .svg-pokeball-stroke, .fire .active .svg-pokeball-fill {
+    fill: white;
+    stroke: #e40533
+}
+.fire .active svg {
+    background-color: #e40533;
+}
+
+/* water menu */
+
+.water .svg-fill, .water .svg-stroke {
+    fill: rgba(19, 147, 210, 1);
+    stroke: rgba(19, 147, 210, 1);
+
+}
+.water .svg-pokeball-fill  {
+    fill: rgba(19, 147, 210, 1);
+}
+.water .active .svg-fill, .water .active .svg-stroke, .water .active .svg-home-stroke{
+    fill: white;
+    stroke: rgba(19, 147, 210, 1);
+}
+.water .active .svg-pokeball-stroke, .water .active .svg-pokeball-fill {
+    fill: white;
+    stroke: rgba(19, 147, 210, 1)
+}
+.water .active svg {
+    background-color: rgba(19, 147, 210, 1);
+}
+
+/* grass menu */
+.grass .svg-fill, .grass .svg-stroke {
+    fill: rgba(118, 166, 46, 1);
+    stroke: rgba(118, 166, 46, 1);
+
+}
+.grass .svg-pokeball-fill  {
+    fill: rgba(118, 166, 46, 1);
+}
+.grass .active .svg-fill, .grass .active .svg-stroke, .grass .active .svg-home-stroke{
+    fill: white;
+    stroke: rgba(118, 166, 46, 1);
+}
+.grass .active .svg-pokeball-stroke, .grass .active .svg-pokeball-fill {
+    fill: white;
+    stroke: rgba(118, 166, 46, 1)
+}
+.grass .active svg {
+    background-color: rgba(118, 166, 46, 1);
+}
+.svg-home-stroke, .svg-pokeball-stroke {
+    stroke: white;
+}
+
+
+/* Section: intro-home page: */
+
+.intro-site { 
+    height: 100vh;
+    width: 100%;
+}
+.display-none {
+    display: none !important;
+}
+.volume-box {
+    background-color: rgba(242, 242, 242, 0.4);
+    border: 2px solid #404040;
+    width: 238px;
+    height: 200px;
+    animation: shake .4s linear infinite;
+}
+.volume-text {
+  color: #262626;
+}
+
+
+/* Section: about page: */
+
+.about-pokeball {
+    width: 48px;
+}
+.nav-link {
+    color: #f8f9fadc;
+}
+.ul-inherit-color {
+    color: rgba(228, 5, 51, 1);
+}
+.nav-pills .nav-link.active {
+    background-color: #f8f9fa;
+    color: inherit;
+    font-weight: 500;
+}
+.nav-link:focus, .nav-link:hover {
+    color: white;
+}
+
+/* Section: pokemon page: */
+
+.pokemon-select {
+    width: 80px;
+}
+
+/* Section: modal: */
+
+.modal-season img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.btn-pokeball {
+    width: 80px; 
+    height: 80px; 
+    background-color: rgb(228, 5, 51);
+    transition: background-color 2s ease;
+}
+.modal-season .btn-modal:before {
+     content: '';
+     position: absolute;
+     width: 80px; 
+     height: 200%;
+     border-radius: inherit;
+     animation: animate  3s linear infinite;
+}
+.fire .modal-season .btn-modal:before {
+    background: linear-gradient(180deg, #E40533, #BF0000, white);
+}
+.water .modal-season .btn-modal:before {
+    background: linear-gradient(180deg, #007bff, #051B52, white);
+}
+.grass .modal-season .btn-modal:before {
+    background: linear-gradient(180deg, #28a745, #284011, white);
+}
+.modal-season .btn-modal:after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border-radius: inherit;
+    background-color: inherit;
+    background-image: url("../img/modal-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+.bubble {
+    z-index: 393;
+    top: -1rem;
+    right: -6.8rem;
+}
+.speech-bubble {
+    width: 160px;
+    background: #f1f1f1;
+    border-radius: 0.4rem;
+    top: -1.2rem;
+    right: -2.6rem;
+  }
+  .speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: #f1f1f1;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -7.5px;
+    margin-bottom: -15px;
+  }
+  .speech-bubble.right::after {
+    left: auto;
+    right: 20px;
+    border-top-color: #f1f1f1;
+    border-right: 0;
+    border-left-color: transparent;
+  }
+  .text-bubble {
+    padding: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+/* Section: slide */
+
+.carousel-item {
+    height: 100%;
+    width: 100%;
+}
+
+/* Section: Footer */
+
+.fire .credit {
+    border-top: 0.2rem solid #dc3545
+}
+.water .credit {
+    border-top: 0.2rem solid #007bff
+}
+.grass .credit {
+    border-top: 0.2rem solid #28a745
+}
+
+/* keyframes */
+@keyframes opacity  {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+@keyframes animate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes shake {
+    0% {margin-left: 0;}
+    25% {margin-left: 7px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -7px;}
+    100% {margin-left: 0;}
+}
+
+

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+    <title>Pokemon Horizons: The Series</title>
+  </head>
+  <body>
+    <header class="position-fixed start-0 end-0 z-3" id="menu">
+      <div class="container-md">
+        <div
+          class="d-flex justify-content-between align-items-center bg-light rounded-4 py-3 px-4"
+        >
+          <div class="logo">
+            <img class="w-100" src="./src/img/logo-pokemon.png" />
+          </div>
+          <nav class="menu">
+            <ul class="nav nav-pills p-0">
+              <li title="Home" class="nav-item me-1">
+                <a
+                  class="text-decoration-none nav-link fs-5 fw-bold text-uppercase"
+                  href="#home"
+                >
+                  <?xml version="1.0" encoding="utf-8"?>
+
+                  <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                  <svg
+                    class="svg-fill"
+                    width="50px"
+                    height="50px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="style=linear" clip-path="url(#clip0_1_106)">
+                      <g id="home-line">
+                        <path
+                          class="svg-stroke"
+                          id="vector"
+                          d="M18.5409 22.5H5.44995C3.7931 22.5 2.44995 21.1569 2.44995 19.5V11.6654C2.44995 10.5118 2.94804 9.4143 3.81634 8.65474L10.0202 3.22784C11.1512 2.2385 12.8396 2.23851 13.9706 3.22784L20.1745 8.65474C21.0428 9.4143 21.5409 10.5118 21.5409 11.6654V19.5C21.5409 21.1569 20.1977 22.5 18.5409 22.5Z"
+                          stroke=""
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          class="svg-home-stroke"
+                          id="vector_2"
+                          d="M10 16.8636H14"
+                          stroke="#000000"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_106">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill=""
+                          transform="translate(0 24) rotate(-90)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li title="About" class="nav-item me-1">
+                <a
+                  class="text-decoration-none nav-link fs-5 fw-bold text-uppercase"
+                  href="#about"
+                >
+                  <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                  <svg
+                    class="svg-fill"
+                    fill="#000000"
+                    width="50px"
+                    height="50px"
+                    viewBox="0 0 256 256"
+                    id="Flat"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M220,128.00037a4.0002,4.0002,0,0,1-4,4H40a4,4,0,0,1,0-8H216A4.0002,4.0002,0,0,1,220,128.00037Zm-180-60H216a4,4,0,0,0,0-8H40a4,4,0,1,0,0,8Zm176,120H40a4,4,0,0,0,0,8H216a4,4,0,0,0,0-8Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li title="Characters" class="nav-item me-1">
+                <a
+                  class="text-decoration-none nav-link fs-5 fw-bold text-uppercase"
+                  href="#characters"
+                >
+                  <?xml version="1.0" encoding="iso-8859-1"?>
+                  <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                  <svg
+                    height="50px"
+                    width="50px"
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 19.64 19.64"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        class="svg-fill"
+                        d="M16.888,11.323c-0.359-0.801-1.907-1.461-2.871-1.804c-0.501-1.162-0.557-2.492-0.514-3.426
+                l0.018,0.067l0.155-1.471c0.009-0.101,0.236-2.378-0.802-3.435l0.007-0.018l-0.137-0.121C11.903,0.374,10.934,0,9.861,0
+                C8.543,0,7.557,0.575,7.507,0.605c-2.04,1.314-1.517,4.05-1.493,4.166L6.052,4.96l0.055,0.005c0.066,0.394,0.402,2.685-0.4,4.554
+                c-0.705,0.294-1.395,0.504-1.418,0.513c-0.887,0.339-1.274,0.857-1.295,0.887c-1.248,1.845-1.402,5.795-1.407,5.977
+                c0.019,1.065,0.513,1.236,0.566,1.247c2.814,1.255,7.107,1.482,7.296,1.493c0.154,0.003,0.306,0.004,0.457,0.004l0,0
+                c4.281,0,7.317-1.253,7.483-1.326c0.548-0.346,0.607-0.655,0.611-0.728C18.338,14.668,16.946,11.46,16.888,11.323z M12.728,5.82
+                l-0.011,0.068c-0.174,1.415-1.855,3.815-2.908,3.815c-1.096,0-2.642-2.489-2.807-3.815l-0.01-0.067L6.955,5.767
+                C6.952,5.765,6.796,5.54,6.654,4.998C6.847,5.009,7.042,5.025,7.23,5.025l0,0c2.359,0,3.857-0.835,4.457-1.25
+                c0.178,0.4,0.564,1.011,1.334,1.339l0.014,0.007c-0.134,0.452-0.266,0.645-0.266,0.645L12.728,5.82z"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li title="Pokemon" class="nav-item">
+                <a
+                  class="text-decoration-none nav-link fs-5 fw-bold text-uppercase"
+                  href="#pokemons"
+                >
+                  <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                  <svg
+                    width="50px"
+                    height="50px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="svg-pokeball-fill svg-pokeball-stroke"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12ZM5.07089 13C5.55612 16.3923 8.47353 19 12 19C15.5265 19 18.4439 16.3923 18.9291 13H14.8293C14.4174 14.1652 13.3062 15 12 15C10.6938 15 9.58251 14.1652 9.17068 13H5.07089ZM18.9291 11C18.4439 7.60771 15.5265 5 12 5C8.47353 5 5.55612 7.60771 5.07089 11H9.17068C9.58251 9.83481 10.6938 9 12 9C13.3062 9 14.4174 9.83481 14.8293 11H18.9291ZM12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z"
+                      fill="#000000"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main data-bs-spy="scroll" data-bs-target="#menu">
+      <section class="intro-site position-relative" id="home">
+        <div
+          class="volume-muted position-absolute h-100 w-100 bg-dark opacity-75"
+        ></div>
+        <div
+          class="volume-muted h-100 w-100 position-absolute d-flex justify-content-center align-items-center z-2"
+        >
+          <div
+            class="volume-box volume-muted rounded d-flex flex-column align-items-center justify-content-between p-3 py-5"
+          >
+            <img class="w-25" src="./src/img/video-volume.svg" alt="Volume" />
+            <small class="volume-text fw-semibold mt-4">
+              Press the
+              <span class="px-1 border border-1 border-dark rounded-1">M</span>
+              key or CLICK in video to release for the volume
+            </small>
+          </div>
+        </div>
+        <video
+          class="h-100 w-100 object-fit-cover"
+          id="video-intro"
+          autoplay
+          muted
+          repeat
+        >
+          <source src="./src/img/pokemon-intro.mp4" type="video/mp4" />
+        </video>
+        <div class="gradient w-100 h-100 position-absolute top-0"></div>
+      </section>
+      <div class="py-4 spacing bg-color"></div>
+      <section class="about py-5 bg-color" id="about">
+        <div class="container-md">
+          <div class="text-icon bg-light rounded p-5">
+            <div class="icon-pokeball w-100 d-flex justify-content-center">
+              <img
+                src="./src/img/about-pokeball.png"
+                alt="pokeball"
+                class="about-pokeball mb-5"
+              />
+            </div>
+            <p>
+              Pokémon Horizons: The Series, known in Japan as Pocket Monsters:
+              Liko and Roy's Departure, Pocket Monsters: The Sparkling of
+              Terapagos, and Pocket Monsters: Terastal Debut is the twenty-sixth
+              season of Pokémon anime series. It premiered in Japan on TV Tokyo
+              on April 14, 2023, and was later distributed by Netflix in the
+              United States on March 7, 2024. Daiki Tomiyasu is the executive
+              director and Saori Den is serving as the director, Dai Satō as
+              script supervisor, Rei Yamazaki as character designer, Conisch as
+              music composer, and Naotsugu Uchida and Akane Yamago replacing
+              Ryōko Nashimoto as sound editor. Bessatsu CoroCoro Comic and
+              Gakushu Yochien are no longer credited as publishers, and Junichi
+              Masuda and Ken Sugimori are no longer credited as creators
+            </p>
+            <p>
+              Unlike previous series, which featured Ash Ketchum as the
+              protagonist, the series stars two new protagonists, Liko and Roy,
+              who team up with the Rising Volt Tacklers, a group of adventurers
+              who explore the Pokémon world and visit various regions, including
+              the Paldea region, which was introduced in Scarlet and Violet. As
+              they do, they are pursued by the Explorers, a mysterious
+              organization seeking Liko's pendant for unknown reasons.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="characters py-5 bg-color" id="characters">
+        <div class="container-md">
+          <ul
+            class="nav nav-pills mb-3 d-flex justify-content-center ul-inherit-color"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                Liko
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                Roy
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active bg-light px-5 pt-5 pb-0 rounded"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <p class="">
+                Liko (Japanese: リコ Liko) is one of the protagonists of Pokémon
+                Horizons: The Series, as well the first female protagonist in
+                the Pokémon anime.[4][5] She owns a mysterious pendant, which
+                was given to her by her grandmother Diana, which was later
+                revealed to be a hibernating Terapagos. Liko remotely attends
+                Indigo Academy and is a member of the Rising Volt Tacklers.
+              </p>
+              <p class="">
+                Liko was born in the Kanto region, and lived there with her
+                parents, Alex and Lucca, for a few years. At some point, they
+                moved to the Paldea region — with Liko then growing up in Cabo
+                Poco. Liko also grew up with her grandmother, Diana, hearing
+                stories of the adventures and journeys she went through around
+                the world. After being accepted into Indigo Academy, Diana gave
+                Liko a mysterious pendant. After saying this gift will be
+                important to her in the future, Diana told Liko that she should
+                rely on her Pokémon to be able to venture out and face her fears
+                on her journey.
+              </p>
+              <div class="d-flex justify-content-center">
+                <img
+                  src="./src/img/characters-liko.png"
+                  alt="Character Liko"
+                  class="w-100"
+                />
+              </div>
+            </div>
+            <div
+              class="tab-pane fade bg-light px-5 pt-5 pb-3 rounded"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              <p>
+                Roy (Japanese: ロイ Roy) is one of the protagonists in Pokémon
+                Horizons: The Series of the Pokémon anime.[2] He owns a
+                mysterious Ancient Poké Ball that was given to him by his
+                grandfather. Roy remotely attends online school and is a member
+                of the Rising Volt Tacklers.
+              </p>
+              <p>
+                Roy grew up on an island in the Kanto region with his parents
+                and grandfather. During his childhood, Roy would travel with his
+                parents on a cargo ship and his grandfather would tell the story
+                of a Legendary Adventurer, which inspired him to become a
+                Pokémon Trainer. Sometime later, Roy was left under his
+                grandfather care when his parents went traveling on their own
+                for business, as he received a mysterious Poké Ball from his
+                grandfather and decided to undercover the mystery of it. Also,
+                Roy would sing to himself until a group of wild Pokémon heard
+                him and followed him.
+              </p>
+              <div class="d-flex justify-content-center">
+                <img
+                  class="w-100"
+                  src="./src/img/characters-roy.png"
+                  alt="Character Roy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="cards py-5 bg-color d-flex justify-content-center"
+        id="pokemons"
+      >
+        <div class="container-md row row-gap-4 column-gap-2 -overflow-hidden">
+          <div class="col-lg p-0 card w-100" style="width: 22rem">
+            <div
+              class="w-100 d-flex justify-content-center border-bottom border-2 bg-danger rounded border-danger py-3"
+            >
+              <img
+                style="width: 8rem"
+                src="./src/img/pokemon-fire.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center mb-2">Fuecoco</h5>
+              <p class="card-text">
+                is a Fire-type Pokémon introduced in Generation IX. It evolves
+                into Crocalor starting at level 16, which evolves into
+                Skeledirge starting at level 36.
+              </p>
+              <input
+                type="radio"
+                name="pokemonSelect"
+                value="fire"
+                class="btn-check w-100 pokemon-select"
+                id="btn-fire"
+                autocomplete="off"
+                checked
+              />
+              <label
+                class="btn btn-danger w-100 py-2 text-uppercase fw-medium label-pokemon-type"
+                for="btn-fire"
+                >Select</label
+              >
+            </div>
+          </div>
+          <div class="col-lg p-0 card w-100" style="width: 22rem">
+            <div
+              class="w-100 d-flex justify-content-center border-bottom border-2 bg-primary rounded border-primary py-3"
+            >
+              <img
+                style="width: 8rem"
+                src="./src/img/pokemon-water.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center mb-2">Quaxly</h5>
+              <p class="card-text">
+                is a Water-type Pokémon introduced in Generation IX. It evolves
+                into Quaxwell starting at level 16, which evolves into Quaquaval
+                starting at level 36.
+              </p>
+              <input
+                type="radio"
+                name="pokemonSelect"
+                value="water"
+                class="btn-check w-100 pokemon-select"
+                id="btn-water"
+                autocomplete="off"
+              />
+              <label
+                class="btn btn-primary w-100 py-2 text-uppercase fw-medium label-pokemon-type"
+                for="btn-water"
+                >Select</label
+              >
+            </div>
+          </div>
+          <div class="col-lg p-0 card w-100" style="width: 22rem">
+            <div
+              class="w-100 d-flex justify-content-center border-bottom border-2 bg-success rounded border-success py-3"
+            >
+              <img
+                style="width: 8rem"
+                src="./src/img/pokemon-grass.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center mb-2">Sprigatito</h5>
+              <p class="card-text">
+                is a Grass-type Pokémon introduced in Generation IX. It evolves
+                into Floragato starting at level 16, which evolves into
+                Meowscarada starting at level 36.
+              </p>
+              <input
+                type="radio"
+                name="pokemonSelect"
+                value="grass"
+                class="btn-check w-100 pokemon-select"
+                id="btn-grass"
+                autocomplete="off"
+              />
+              <label
+                class="btn btn-success w-100 py-2 text-uppercase fw-medium label-pokemon-type"
+                for="btn-grass"
+                >Select</label
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="modal-season d-flex justify-content-center position-relative py-5 bg-color"
+      >
+        <div class="position-relative" style="width: 80px">
+          <button
+            type="button"
+            class="btn-pokeball btn btn-modal outline-none rounded-circle p-3 position-relative overflow-hidden d-flex justify-content-center align-items-center"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          ></button>
+          <div class="bubble position-absolute">
+            <div class="speech-bubble">
+              <p class="text-center fw-medium text-bubble fw-semibold">
+                Click Here!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-6" id="exampleModalLabel">
+                  Images of the new season of Pokemon Horizons
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div
+                class="modal-body d-flex ms-0 me-0 justify-content-center align-items-center"
+              >
+                <div id="carouselExample" class="carousel slide container-md">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active border border-2">
+                      <img
+                        src="./src/img/slide-image (1).jpg"
+                        class="d-block mx-auto"
+                        alt="images of new season - Pokémon"
+                      />
+                    </div>
+
+                    <div class="carousel-item">
+                      <img
+                        src="./src/img/slide-image (2).jpg"
+                        class="d-block mx-auto"
+                        alt="images of new season - Pokémon"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./src/img/slide-image (2).png"
+                        class="d-block mx-auto"
+                        alt="images of new season - Pokémon"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./src/img/slide-image (3).jpg"
+                        class="d-block mx-auto"
+                        alt="images of new season - Pokémon"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./src/img/slide-image (3).png"
+                        class="d-block mx-auto"
+                        alt="images of new season - Pokémon"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./src/img/slide-image (4).jpg"
+                        class="d-block mx-auto"
+                        alt="images of new season - Pokémon"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./src/img/slide-image (4).png"
+                        class="d-block mx-auto"
+                        alt="images of new season - Pokémon"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./src/img/slide-image (5).jpg"
+                        class="d-block mx-auto"
+                        alt="images of new season - Pokémon"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./src/img/slide-image (6).jpg"
+                        class="d-block mx-auto"
+                        alt="images of new season - Pokémon"
+                      />
+                    </div>
+
+                    <div class="carousel-item">
+                      <img
+                        src="./src/img/slide-image (7).jpg"
+                        class="d-block mx-auto"
+                        alt="images of new season - Pokémon"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./src/img/slide-image (8).jpg"
+                        class="d-block mx-auto"
+                        alt="images of new season - Pokémon"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer class="py-3 bg-color">
+    <small class="d-block text-center fw-semibold text-light pt-3 credit"
+      >&#169; Developed by
+      <a class="text-light" href="https://github.com/inacio-developer"
+        >Rafael Inácio</a
+      >
+      as study material</small
+    >
+  </footer>
+
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+  <script type="module" src="./src/js/index.js"></script>
+</html>
